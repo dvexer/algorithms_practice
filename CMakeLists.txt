@@ -3,4 +3,9 @@ project(algorithms_practice)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(algorithms_practice main.cpp)
+set(SOURCES main.cpp algorithms/BinarySearch.cpp)
+set(HEADERS algorithms/BinarySearch.hpp)
+
+add_subdirectory(tests)
+
+add_executable(algorithms_practice ${SOURCES} ${HEADERS})
