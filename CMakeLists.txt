@@ -3,7 +3,7 @@ project(algorithms_practice)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCES main.cpp algorithms/BinarySearch.cpp)
+set(SOURCES main.cpp)
 set(HEADERS algorithms/BinarySearch.hpp)
 
 add_subdirectory(tests)
