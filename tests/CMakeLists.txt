@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5.1)
 set(target algorithms_practice_test)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 # Download and unpack googletest at configure time
 configure_file(GoogleTest-CMakeLists.txt.in ${CMAKE_BINARY_DIR}/googletest-download/CMakeLists.txt)
@@ -25,7 +25,12 @@ add_subdirectory(${CMAKE_BINARY_DIR}/googletest-src
         EXCLUDE_FROM_ALL)
 
 include_directories(${CMAKE_SOURCE_DIR})
-set(SOURCES main.cpp BinarySearchTest.cpp BubbleSortTest.cpp SelectionSortTest.cpp DepthFirstSearchTest.cpp)
+set(SOURCES main.cpp
+            BinarySearchTest.cpp
+            BubbleSortTest.cpp
+            SelectionSortTest.cpp
+            DepthFirstSearchTest.cpp
+            LRUCacheTest.cpp)
 
 add_executable(${target} ${SOURCES})
 target_link_libraries(${target} gtest_main)

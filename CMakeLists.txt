@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 project(algorithms_practice)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCES main.cpp)
 set(HEADERS algorithms/BinarySearch.hpp
@@ -9,6 +9,7 @@ set(HEADERS algorithms/BinarySearch.hpp
             algorithms/SelectionSort.hpp
             algorithms/DepthFirstSearch.hpp
             data_structures/Node.hpp
+            data_structures/LRUCache.hpp
             )
 include_directories(data_structures)
 
