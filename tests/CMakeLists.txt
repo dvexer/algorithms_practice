@@ -25,7 +25,7 @@ add_subdirectory(${CMAKE_BINARY_DIR}/googletest-src
         EXCLUDE_FROM_ALL)
 
 include_directories(${CMAKE_SOURCE_DIR})
-set(SOURCES main.cpp BinarySearchTest.cpp BubbleSortTest.cpp SelectionSortTest.cpp)
+set(SOURCES main.cpp BinarySearchTest.cpp BubbleSortTest.cpp SelectionSortTest.cpp DepthFirstSearchTest.cpp)
 
 add_executable(${target} ${SOURCES})
 target_link_libraries(${target} gtest_main)
