@@ -30,7 +30,9 @@ set(SOURCES main.cpp
             BubbleSortTest.cpp
             SelectionSortTest.cpp
             DepthFirstSearchTest.cpp
-            LRUCacheTest.cpp)
+            LRUCacheTest.cpp
+            TreeViewTest.cpp
+)
 
 add_executable(${target} ${SOURCES})
 target_link_libraries(${target} gtest_main)

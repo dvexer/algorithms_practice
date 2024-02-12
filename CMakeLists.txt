@@ -8,9 +8,10 @@ set(HEADERS algorithms/BinarySearch.hpp
             algorithms/BubbleSort.hpp
             algorithms/SelectionSort.hpp
             algorithms/DepthFirstSearch.hpp
+            algorithms/TreeView.hpp
             data_structures/Node.hpp
             data_structures/LRUCache.hpp
-            )
+)
 include_directories(data_structures)
 
 add_subdirectory(tests)
