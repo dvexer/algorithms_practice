@@ -32,6 +32,7 @@ set(SOURCES main.cpp
             DepthFirstSearchTest.cpp
             LRUCacheTest.cpp
             TreeViewTest.cpp
+            StringUtilsTest.cpp
 )
 
 add_executable(${target} ${SOURCES})
