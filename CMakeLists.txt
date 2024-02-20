@@ -12,6 +12,8 @@ set(HEADERS algorithms/BinarySearch.hpp
             algorithms/DepthFirstSearch.hpp
             algorithms/StringUtils.hpp
             algorithms/TreeView.hpp
+            algorithms/GraphsUtils.cpp
+            algorithms/GraphsUtils.hpp
             data_structures/Node.hpp
             data_structures/LRUCache.hpp
 )
